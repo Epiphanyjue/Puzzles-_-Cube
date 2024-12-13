@@ -1,0 +1,437 @@
+Using pre-set license
+Built from '2021.3/china_unity/release' branch; Version is '2021.3.38f1c1 (ff265c8f058d) revision 16721500'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'zh' Physical Memory: 32610 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+D:\UnityPackage\2021.3.38f1c1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+D:/unity/期末作业-方块解谜
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+6141
+Successfully changed project path to: D:/unity/期末作业-方块解谜
+D:/unity/期末作业-方块解谜
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [2292] Host "[IP] 10.19.75.128 [Port] 0 [Flags] 2 [Guid] 4057292510 [EditorId] 4057292510 [Version] 1048832 [Id] WindowsEditor(7,CHINAMI-CSQETO0) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [2292] Host "[IP] 10.19.75.128 [Port] 0 [Flags] 2 [Guid] 4057292510 [EditorId] 4057292510 [Version] 1048832 [Id] WindowsEditor(7,CHINAMI-CSQETO0) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+AS: AutoStreaming module initializing.
+[Physics::Module] Initialized MultithreadedJobDispatcher with {0} workers.
+Refreshing native plugins compatible for Editor in 77.75 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.38f1c1 (ff265c8f058d)
+[Subsystems] Discovering subsystems at path D:/UnityPackage/2021.3.38f1c1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/unity/期末作业-方块解谜/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 4070 Ti (ID=0x2782)
+    Vendor:   NVIDIA
+    VRAM:     11996 MB
+    Driver:   32.0.15.6636
+Initialize mono
+Mono path[0] = 'D:/UnityPackage/2021.3.38f1c1/Editor/Data/Managed'
+Mono path[1] = 'D:/UnityPackage/2021.3.38f1c1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'D:/UnityPackage/2021.3.38f1c1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56716
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/UnityPackage/2021.3.38f1c1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.004670 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 70.99 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.671 seconds
+Domain Reload Profiling:
+	ReloadAssembly (672ms)
+		BeginReloadAssembly (118ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (443ms)
+			LoadAssemblies (111ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (99ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (29ms)
+			SetupLoadedEditorAssemblies (263ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (71ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (133ms)
+				ProcessInitializeOnLoadMethodAttributes (50ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.016875 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.53 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Completed reload, in  1.580 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1580ms)
+		BeginReloadAssembly (141ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (20ms)
+		EndReloadAssembly (1314ms)
+			LoadAssemblies (117ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (249ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (50ms)
+			SetupLoadedEditorAssemblies (877ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (87ms)
+				ProcessInitializeOnLoadAttributes (745ms)
+				ProcessInitializeOnLoadMethodAttributes (23ms)
+				AfterProcessingInitializeOnLoad (17ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 0.58 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3087 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 24 unused Assets / (46.4 KB). Loaded Objects now: 3547.
+Memory consumption went from 111.3 MB to 111.2 MB.
+Total: 3.096700 ms (FindLiveObjects: 0.321900 ms CreateObjectMapping: 0.082700 ms MarkObjects: 2.624700 ms  DeleteObjects: 0.066400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1494990.796617 seconds.
+  path: Assets/Scenes/Initial.unity
+  artifactKey: Guid(f849330236ea1954b888dc8fbbc4a22e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Scenes/Initial.unity using Guid(f849330236ea1954b888dc8fbbc4a22e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd575742822bd4598a00369e91de2e98') in 0.009618 seconds 
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 6.584658 seconds.
+  path: Assets/Scenes/Episode1.unity
+  artifactKey: Guid(017c99441e4ac67488192197e2949103) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Scenes/Episode1.unity using Guid(017c99441e4ac67488192197e2949103) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8ede43266f622c73e32a375d38e755b') in 0.002814 seconds 
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 195.376318 seconds.
+  path: Assets/New Folder
+  artifactKey: Guid(9de675e38e349f04aa2dbf1d689ae3b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/New Folder using Guid(9de675e38e349f04aa2dbf1d689ae3b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b7da6d825838525f2e097f4bd04134f') in 0.002860 seconds 
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 6.498752 seconds.
+  path: Assets/Introduction
+  artifactKey: Guid(9de675e38e349f04aa2dbf1d689ae3b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Introduction using Guid(9de675e38e349f04aa2dbf1d689ae3b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8b32b9e4e195e4b233cca9ba171a4c7') in 0.002028 seconds 
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 39.740829 seconds.
+  path: Assets/Introduction/BeautifulSky
+  artifactKey: Guid(4a9e9d8ff0bc4a14ba8d61049926572e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Introduction/BeautifulSky using Guid(4a9e9d8ff0bc4a14ba8d61049926572e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09194a22afb301bbeb2783c63bce284c') in 0.002475 seconds 
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 1.057271 seconds.
+  path: Assets/Introduction/BeautifulSky/CubeMap
+  artifactKey: Guid(35c711fdcf5f1874e81617f86b7539b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Introduction/BeautifulSky/CubeMap using Guid(35c711fdcf5f1874e81617f86b7539b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3d026d2b69a723e08d235d40d4437d1') in 0.002518 seconds 
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 1.108142 seconds.
+  path: Assets/Introduction/BeautifulSky/CubeMap/Textures
+  artifactKey: Guid(4211e96d3d3f89744a6ff7e515efc4f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Introduction/BeautifulSky/CubeMap/Textures using Guid(4211e96d3d3f89744a6ff7e515efc4f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc28b451118199b5c757e7f975cff466') in 0.002065 seconds 
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.050711 seconds.
+  path: Assets/Introduction/BeautifulSky/CubeMap/Textures/Sky_Anime_01_Day_a.png
+  artifactKey: Guid(0fead57e1d095104dbd7c86ee5b2004b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Introduction/BeautifulSky/CubeMap/Textures/Sky_Anime_01_Day_a.png using Guid(0fead57e1d095104dbd7c86ee5b2004b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e33fdad2d183da2e29fe750e2066d88') in 0.304031 seconds 
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Introduction/BeautifulSky/CubeMap/Textures/Sky_Anime_14_Rain_a.png
+  artifactKey: Guid(2d3ebc091a375af4b9c862be2ced6490) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Introduction/BeautifulSky/CubeMap/Textures/Sky_Anime_14_Rain_a.png using Guid(2d3ebc091a375af4b9c862be2ced6490) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ac1169f19a83c1ce03d508923563fd4') in 0.092694 seconds 
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Introduction/BeautifulSky/CubeMap/Textures/Sky_LowPoly_03_Day_a.png
+  artifactKey: Guid(493ce9a0dd998194a8ab122f76f14754) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Introduction/BeautifulSky/CubeMap/Textures/Sky_LowPoly_03_Day_a.png using Guid(493ce9a0dd998194a8ab122f76f14754) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9360812ef7f84696704dbe4002999f19') in 0.087104 seconds 
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Introduction/BeautifulSky/CubeMap/Textures/Sky_Anime_02_Night_b.png
+  artifactKey: Guid(3785fcba59d48d048aa198231048849c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Introduction/BeautifulSky/CubeMap/Textures/Sky_Anime_02_Night_b.png using Guid(3785fcba59d48d048aa198231048849c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75392925722f639df06945a78ce8f600') in 0.090810 seconds 
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Introduction/BeautifulSky/CubeMap/Textures/Sky_Anime_01_Night_c.png
+  artifactKey: Guid(9652680d1ad377c4a84af2103437305e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Introduction/BeautifulSky/CubeMap/Textures/Sky_Anime_01_Night_c.png using Guid(9652680d1ad377c4a84af2103437305e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c93408b34c579c81a56f3939d4279068') in 0.086026 seconds 
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Introduction/BeautifulSky/CubeMap/Textures/Sky_Anime_20_Day_a.png
+  artifactKey: Guid(0eeaf463bf1d1ed45970897449cba5ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Introduction/BeautifulSky/CubeMap/Textures/Sky_Anime_20_Day_a.png using Guid(0eeaf463bf1d1ed45970897449cba5ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '248dd9d8635f9860d06c7805f5c70d3f') in 0.089013 seconds 
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Introduction/BeautifulSky/CubeMap/Textures/Sky_Anime_10_Night_b.png
+  artifactKey: Guid(62ecee5f5c2d9d64cbe3a5468923d1a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Introduction/BeautifulSky/CubeMap/Textures/Sky_Anime_10_Night_b.png using Guid(62ecee5f5c2d9d64cbe3a5468923d1a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '841cc32cf1ad93f60ea4da3582f971e3') in 0.087563 seconds 
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Introduction/BeautifulSky/CubeMap/Textures/Sky_Anime_12_morning_a.png
+  artifactKey: Guid(da3251f28975fb74e9ea2b37d607c7a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Introduction/BeautifulSky/CubeMap/Textures/Sky_Anime_12_morning_a.png using Guid(da3251f28975fb74e9ea2b37d607c7a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ab3b0be49afaf668744e2f9198d4ff2') in 0.089121 seconds 
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Introduction/BeautifulSky/CubeMap/Textures/Sky_Anime_04_Day_a.png
+  artifactKey: Guid(cb7cc6c307bb90b4dbe4fb47efaf6d29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Introduction/BeautifulSky/CubeMap/Textures/Sky_Anime_04_Day_a.png using Guid(cb7cc6c307bb90b4dbe4fb47efaf6d29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9190a5a39aecad5af9a42d6deee4d0c0') in 0.089042 seconds 
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Introduction/BeautifulSky/CubeMap/Textures/Sky_Anime_13_dusk_a.png
+  artifactKey: Guid(4e2a387ccaa55a940a1c51202e0d6669) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Introduction/BeautifulSky/CubeMap/Textures/Sky_Anime_13_dusk_a.png using Guid(4e2a387ccaa55a940a1c51202e0d6669) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9aca16ebdf547cbb02b40b6586fc1358') in 0.087047 seconds 
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Introduction/BeautifulSky/CubeMap/Textures/Sky_Anime_01_Night_a.png
+  artifactKey: Guid(43b90e4776ef5ed4590a978e850bf83c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Introduction/BeautifulSky/CubeMap/Textures/Sky_Anime_01_Night_a.png using Guid(43b90e4776ef5ed4590a978e850bf83c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18aa660c3e010185a5c843162d88da60') in 0.085890 seconds 
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Introduction/BeautifulSky/CubeMap/Textures/Sky_Anime_17_Night_a.png
+  artifactKey: Guid(a0db82fbd9c09c449b065b3534b06dde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Introduction/BeautifulSky/CubeMap/Textures/Sky_Anime_17_Night_a.png using Guid(a0db82fbd9c09c449b065b3534b06dde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '620fe5de2da67e5b2d77215044c97af2') in 0.092868 seconds 
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Introduction/BeautifulSky/CubeMap/Textures/Sky_LowPoly_01_Day_a.png
+  artifactKey: Guid(c70246a0ac0cdc549bcfb25e6d9dc2dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Introduction/BeautifulSky/CubeMap/Textures/Sky_LowPoly_01_Day_a.png using Guid(c70246a0ac0cdc549bcfb25e6d9dc2dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73b3eff18d7b1cba9b919d82d606be49') in 0.102913 seconds 
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Introduction/BeautifulSky/CubeMap/Textures/Sky_Anime_03_Day_a.png
+  artifactKey: Guid(5f93254ef39f5f04ba45ed8a590687b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Introduction/BeautifulSky/CubeMap/Textures/Sky_Anime_03_Day_a.png using Guid(5f93254ef39f5f04ba45ed8a590687b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95d1cf4fe801a8630834c0ba2ffe7da7') in 0.086904 seconds 
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Introduction/BeautifulSky/CubeMap/Textures/Sky_Anime_06_dusk_a.png
+  artifactKey: Guid(a48c692509809344b84c1b949b652e99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Introduction/BeautifulSky/CubeMap/Textures/Sky_Anime_06_dusk_a.png using Guid(a48c692509809344b84c1b949b652e99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0aac2d2ff8d9145348a58b1f04ee0858') in 0.086644 seconds 
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Introduction/BeautifulSky/CubeMap/Textures/Sky_Anime_01_Night_b.png
+  artifactKey: Guid(c20c37b97d7eb194ca4ca468a14b7441) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Introduction/BeautifulSky/CubeMap/Textures/Sky_Anime_01_Night_b.png using Guid(c20c37b97d7eb194ca4ca468a14b7441) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d964709f474c4ba093a840a7312f86b') in 0.088601 seconds 
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Introduction/BeautifulSky/CubeMap/Textures/Sky_Anime_10_Night_a.png
+  artifactKey: Guid(86d3e68e62cae4f43aa4413fe937a997) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Introduction/BeautifulSky/CubeMap/Textures/Sky_Anime_10_Night_a.png using Guid(86d3e68e62cae4f43aa4413fe937a997) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92a47ab4bb2604a012f23bed5c757865') in 0.090714 seconds 
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Introduction/BeautifulSky/CubeMap/Textures/Sky_Anime_05_Day_b.png
+  artifactKey: Guid(3d24939e51e8d884b87891caaca3c4c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Introduction/BeautifulSky/CubeMap/Textures/Sky_Anime_05_Day_b.png using Guid(3d24939e51e8d884b87891caaca3c4c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2ba12478603379c2c854d49f003394c') in 0.100778 seconds 
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 28.763091 seconds.
+  path: Assets/Introduction/BeautifulSky/CubeMap/Materials/Sky_Anime_01_dusk_b.mat
+  artifactKey: Guid(56197f6d17ef6004c921b3991d98b642) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Introduction/BeautifulSky/CubeMap/Materials/Sky_Anime_01_dusk_b.mat using Guid(56197f6d17ef6004c921b3991d98b642) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c165e26d6ca0bce5ad6477ab9f0b5222') in 0.277233 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Introduction/BeautifulSky/CubeMap/Materials/Sky_Anime_13_dusk_a.mat
+  artifactKey: Guid(63dbe450c3af93048b3b6f06e515e5cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Introduction/BeautifulSky/CubeMap/Materials/Sky_Anime_13_dusk_a.mat using Guid(63dbe450c3af93048b3b6f06e515e5cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b935989d0f6199222cfd1783904ae15') in 0.225550 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Introduction/BeautifulSky/CubeMap/Materials/Sky_Anime_16_Night_a.mat
+  artifactKey: Guid(f702496a9be18894cbd87e3174bfdd4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Introduction/BeautifulSky/CubeMap/Materials/Sky_Anime_16_Night_a.mat using Guid(f702496a9be18894cbd87e3174bfdd4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a9ce1c369b651fd4ff207b9f7b00d74') in 0.152730 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/Introduction/BeautifulSky/CubeMap/Materials/Sky_Anime_02_dusk_a.mat
+  artifactKey: Guid(675fd68bfed36954bb6cf93cf4589110) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Introduction/BeautifulSky/CubeMap/Materials/Sky_Anime_02_dusk_a.mat using Guid(675fd68bfed36954bb6cf93cf4589110) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1473b4fd7e2c2b3445387f9d6f0df3d2') in 0.196019 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Introduction/BeautifulSky/CubeMap/Materials/Sky_Anime_17_Night_a.mat
+  artifactKey: Guid(00ed8b70d0c97794b99cd606cda09712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Introduction/BeautifulSky/CubeMap/Materials/Sky_Anime_17_Night_a.mat using Guid(00ed8b70d0c97794b99cd606cda09712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12db1caa88d458567a624aedf7acaab4') in 0.193773 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000089 seconds.
+  path: Assets/Introduction/BeautifulSky/CubeMap/Materials/Sky_Anime_15_Day_a.mat
+  artifactKey: Guid(591210693df5ef446be6152e34d4f8e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Introduction/BeautifulSky/CubeMap/Materials/Sky_Anime_15_Day_a.mat using Guid(591210693df5ef446be6152e34d4f8e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96054fe3c557364b7f1efca4b65acbc6') in 0.215778 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Introduction/BeautifulSky/CubeMap/Materials/Sky_Anime_01_Night_c.mat
+  artifactKey: Guid(72daadf88e6bce04f8d5d1444e22fa86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Introduction/BeautifulSky/CubeMap/Materials/Sky_Anime_01_Night_c.mat using Guid(72daadf88e6bce04f8d5d1444e22fa86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45e7de8ef70694c7251b0474e68bba0a') in 0.273313 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/Introduction/BeautifulSky/CubeMap/Materials/Sky_Anime_02_Day_a.mat
+  artifactKey: Guid(0923a2373f39f6d4e9b8df1c3f8736bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Introduction/BeautifulSky/CubeMap/Materials/Sky_Anime_02_Day_a.mat using Guid(0923a2373f39f6d4e9b8df1c3f8736bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f99e69774ee3ac0672060d4a8c4b0fc') in 0.233758 seconds 
+Number of asset objects unloaded after import = 3
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
