@@ -80,7 +80,7 @@ public class Inter_Cube : MonoBehaviour
             }
 
             // 收取立方体
-            if (Input.GetKeyDown(KeyCode.R) && hitObject.GetComponent<CubeParent>().isMove)
+            if (Input.GetKeyDown(KeyCode.E) && hitObject.GetComponent<CubeParent>().isMove)
             {
                 BagManager.Instance.AddItem(hitObject.tag, 1);
                 Destroy(hitObject);
