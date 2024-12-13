@@ -38964,7 +38964,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5140009466988723083, guid: 6287e93dff5dc6642bedf432b84e4cf3, type: 3}
       propertyPath: jumpForce
-      value: 12
+      value: 12.5
       objectReference: {fileID: 0}
     - target: {fileID: 5140009466988723083, guid: 6287e93dff5dc6642bedf432b84e4cf3, type: 3}
       propertyPath: moveSpeed
@@ -38984,7 +38984,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5140009466988723083, guid: 6287e93dff5dc6642bedf432b84e4cf3, type: 3}
       propertyPath: gravityScaleDuringAscend
-      value: 6
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5140009466988723083, guid: 6287e93dff5dc6642bedf432b84e4cf3, type: 3}
       propertyPath: moveAccelerationDuration
@@ -38992,7 +38992,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5140009466988723083, guid: 6287e93dff5dc6642bedf432b84e4cf3, type: 3}
       propertyPath: gravityScaleDuringDescend
-      value: 8
+      value: 2.3
       objectReference: {fileID: 0}
     - target: {fileID: 5140009466988723084, guid: 6287e93dff5dc6642bedf432b84e4cf3, type: 3}
       propertyPath: m_rSpeed
@@ -39004,7 +39004,7 @@ PrefabInstance:
       objectReference: {fileID: 3951221134050741242, guid: 258ef5f6843fe6c45a816d6e259c4092, type: 3}
     - target: {fileID: 5140009468185354259, guid: 6287e93dff5dc6642bedf432b84e4cf3, type: 3}
       propertyPath: field of view
-      value: 85
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 5140009468185354259, guid: 6287e93dff5dc6642bedf432b84e4cf3, type: 3}
       propertyPath: near clip plane

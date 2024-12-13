@@ -147,7 +147,7 @@ public class PlayerMovement : MonoBehaviour
 
     void HandleJumping()
     {
-        if (isGrounded && Mathf.Abs(rb.velocity.y) < 1f)
+        if (isGrounded && Mathf.Abs(rb.velocity.y) < 2f)
         {
             isJumping = false;
         }
