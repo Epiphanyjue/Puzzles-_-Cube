@@ -16,7 +16,7 @@ public class StatusManager : MonoBehaviour
     //检测是否需要使用重生点
     private float point_Counter=0f;
     //当前记录的位置
-    private Vector3 jumpPos;
+    private Vector3 jumpPos=Vector3.zero;
 
 
     void Awake()
@@ -24,16 +24,20 @@ public class StatusManager : MonoBehaviour
         EventCenter.Instance.Subscribe("Jump",RecordPos);
         player_Transform=GameObject.FindWithTag("Player").GetComponent<Transform>();
         player_Rigidbody=GameObject.FindWithTag("Player").GetComponent<Rigidbody>();
+        jumpPos=player_Transform.position;
     }
-
+    void OnDisable()
+    {
+        EventCenter.Instance.Unsubscribe("Jump",RecordPos);
+    }
     void Update()
     {
-        m_Counter-=Time.deltaTime;
+
 
         point_Counter+=Time.deltaTime;
 
 
-            CheckPlayer();
+        CheckPlayer();
 
     }
 

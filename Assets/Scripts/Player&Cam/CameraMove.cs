@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class CameraMove : MonoBehaviour
 {
@@ -52,17 +53,17 @@ public class CameraMove : MonoBehaviour
 
     void Update()
     {
-        // 在UI上时不执行
-        // if (EventSystem.current.IsPointerOverGameObject()) return;
 
-        if (viewMode != CamViewMode.LIMIT)
-        {
-            CameraRotate(); // 摄像机旋转
+    if (EventSystem.current.IsPointerOverGameObject()) return;
 
-        }
+    if (viewMode != CamViewMode.LIMIT)
+    {
+        CameraRotate(); // 摄像机旋转
 
-        // 不同视角
-        CameraMode();
+    }
+
+    // 不同视角
+    CameraMode();
     }
 
     private void CameraMode()

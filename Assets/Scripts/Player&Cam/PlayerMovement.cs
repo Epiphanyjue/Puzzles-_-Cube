@@ -60,9 +60,12 @@ public class PlayerMovement : MonoBehaviour
     {
         HandleMovement();
         HandleJumping();
+
+    }
+    void FixedUpdate()
+    {
         ApplyCustomGravity();
     }
-
     void HandleMovement()
     {
         // 获取水平和垂直方向的输入（WASD控制）
@@ -90,7 +93,6 @@ public class PlayerMovement : MonoBehaviour
         // 处理加速
         if (moveDirection.magnitude > 0 &&!isWalled)
         {
-            Debug.Log(moveDirection.magnitude);
             // timeSinceDirectionChange += Time.deltaTime;  // 记录按住方向键的时间
             //撞墙时清空加速计时
             if(isWalled)
@@ -157,12 +159,14 @@ public class PlayerMovement : MonoBehaviour
         {
             if (Input.GetButtonDown("Jump") && !isJumping)
             {
-                EventCenter.Instance.TriggerEvent("Jump");
+                jumpStuckTimer=0.0f;
+                AudioManager.Instance.Play("Jump");
                 isJumping = true;
                 hasJumped = true;
 
                 // 只有在地面上按下空格键时才跳跃，保持水平速度不变
                 rb.velocity = new Vector3(rb.velocity.x, jumpForce, rb.velocity.z);  // 只修改y轴速度
+                EventCenter.Instance.TriggerEvent("Jump");
             }
         }
         if(isJumping)

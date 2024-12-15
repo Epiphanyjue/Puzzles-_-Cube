@@ -29,7 +29,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3951221134050741242}
-  m_LocalRotation: {x: 0.01620105, y: 0.021877557, z: -0.00007882342, w: 0.99962944}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.2821255, y: 1.9762497, z: -3.270605}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 1
@@ -117,6 +117,7 @@ MonoBehaviour:
   darkColor: {r: 0.9169811, g: 0.6507872, b: 0.4204271, a: 1}
   m_Intensity: 1
   outlineColor: {r: 1, g: 0.4511705, b: 0, a: 1}
+  rimThreshold: 0.732
 --- !u!65 &734515093540380388
 BoxCollider:
   m_ObjectHideFlags: 0
