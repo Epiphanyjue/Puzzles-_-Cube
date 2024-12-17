@@ -21,13 +21,65 @@ MonoBehaviour:
     value: 1
   intensity:
     overrideState: 0
-    value: 0
+    value: 0.506
   size:
     overrideState: 0
-    value: 1
+    value: 0.3
   lumContrib:
     overrideState: 0
     value: 0.8
+--- !u!114 &-2176747709235623568
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1cb7e9e120078f43bce4f0b1be547a7, type: 3}
+  m_Name: AmbientOcclusion
+  m_EditorClassIdentifier: 
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 1
+  mode:
+    overrideState: 1
+    value: 1
+  intensity:
+    overrideState: 1
+    value: 2.01
+  color:
+    overrideState: 1
+    value: {r: 0, g: 0, b: 0, a: 1}
+  ambientOnly:
+    overrideState: 1
+    value: 1
+  noiseFilterTolerance:
+    overrideState: 1
+    value: 0
+  blurTolerance:
+    overrideState: 1
+    value: -4.6
+  upsampleTolerance:
+    overrideState: 1
+    value: -12
+  thicknessModifier:
+    overrideState: 1
+    value: 4.62
+  zBias:
+    overrideState: 1
+    value: 0.0001
+  directLightingStrength:
+    overrideState: 1
+    value: 0
+  radius:
+    overrideState: 1
+    value: 0.25
+  quality:
+    overrideState: 1
+    value: 2
 --- !u!114 &-670546145124226291
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -73,6 +125,7 @@ MonoBehaviour:
   - {fileID: -4376675205512964869}
   - {fileID: -670546145124226291}
   - {fileID: 525003587753162229}
+  - {fileID: -2176747709235623568}
 --- !u!114 &525003587753162229
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -145,7 +198,7 @@ MonoBehaviour:
     defaultState: 1
   tonemapper:
     overrideState: 1
-    value: 3
+    value: 1
   toneCurveToeStrength:
     overrideState: 0
     value: 0
@@ -185,7 +238,7 @@ MonoBehaviour:
     value: 0
   saturation:
     overrideState: 1
-    value: 19
+    value: 14
   brightness:
     overrideState: 0
     value: 0
@@ -194,16 +247,16 @@ MonoBehaviour:
     value: 0
   contrast:
     overrideState: 1
-    value: 4
+    value: 40
   mixerRedOutRedIn:
     overrideState: 0
-    value: 100
+    value: -200
   mixerRedOutGreenIn:
     overrideState: 0
-    value: 0
+    value: 200
   mixerRedOutBlueIn:
     overrideState: 0
-    value: 0
+    value: 32
   mixerGreenOutRedIn:
     overrideState: 0
     value: 0

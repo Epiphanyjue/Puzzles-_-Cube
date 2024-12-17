@@ -66,13 +66,17 @@
     <Compile Include="Assets\Scripts\Instance\BagManager.cs" />
     <Compile Include="Assets\Scripts\Art\SkyboxControl.cs" />
     <Compile Include="Assets\Scripts\Episode\EpisodeTimeCount.cs" />
+    <Compile Include="Assets\Scripts\Cube\DestinationSin.cs" />
     <Compile Include="Assets\Scripts\Cube\PerObjectMaterialProperties.cs" />
     <Compile Include="Assets\Scripts\Player&amp;Cam\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\AudioManager.cs" />
     <Compile Include="Assets\Scripts\Player&amp;Cam\Inter_Cube.cs" />
+    <Compile Include="Assets\Scripts\Cube\AutoReset.cs" />
     <Compile Include="Assets\Scripts\Instance\EventCenter.cs" />
     <Compile Include="Assets\Scripts\Cube\CubeParent.cs" />
     <Compile Include="Assets\Scripts\Player&amp;Cam\CameraMove.cs" />
     <Compile Include="Assets\Scripts\UI\ButtonEffect.cs" />
+    <Compile Include="Assets\Scripts\UI\EnterTex.cs" />
     <Compile Include="Assets\Scripts\Player&amp;Cam\WinnerCamera.cs" />
     <Compile Include="Assets\Scripts\Cube\Destination.cs" />
     <Compile Include="Assets\Scripts\Player&amp;Cam\StatusManager.cs" />
@@ -80,8 +84,6 @@
     <Compile Include="Assets\Scripts\Player&amp;Cam\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Episode\EpisodeChange.cs" />
     <Compile Include="Assets\Scripts\UI\PauseUI.cs" />
-    <Compile Include="Assets\Scripts\UI\EnterTex.cs" />
-    <Compile Include="Assets\Scripts\AudioManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

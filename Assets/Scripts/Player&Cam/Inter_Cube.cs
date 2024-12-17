@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 
 public class Inter_Cube : MonoBehaviour
@@ -18,8 +19,9 @@ public class Inter_Cube : MonoBehaviour
     private Material mat;
     private Collider m_Collider = null;
     [Header("射线检测距离")]
-    public int m_distance=5;
-
+    public float m_distance=3.5f;
+    [Header("灰色提示")]
+    public TextMeshProUGUI grayPromt;
     void Awake()
     {
         outline.rectTransform.anchoredPosition=new Vector2(-450,-450);
@@ -39,23 +41,23 @@ public class Inter_Cube : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(ray, out hit, m_distance, raycastLayer))
         {
-            if (m_Collider == null)
-            {
-                m_Collider = hit.collider;
-            }
+            // if (m_Collider == null)
+            // {
+            //     m_Collider = hit.collider;
+            // }
 
-            // 碰撞体特效
-            hit.collider.gameObject.GetComponent<Renderer>().material.SetColor("_LightColor",Color.black);
-            if (m_Collider != hit.collider)
-            {
-                m_Collider.gameObject.GetComponent<Renderer>().material.SetColor("_LightColor",Color.white);
-                m_Collider = hit.collider;
-            }
+            // // 碰撞体特效
+            // hit.collider.gameObject.GetComponent<PerObjectMaterialProperties>().rimThreshold=0.001f;
+            // if (m_Collider != hit.collider)
+            // {
+            //     m_Collider.gameObject.GetComponent<PerObjectMaterialProperties>().rimThreshold=0.73f;
+            //     m_Collider = hit.collider;
+            // }
 
             // 获取命中的物体（假设是一个立方体）
             GameObject hitObject = hit.collider.gameObject;
 
-            if (Input.GetKeyDown(KeyCode.F)&&BagManager.Instance.GetItemCount(cubeName[currentIndex])>0)
+            if (Input.GetMouseButtonDown(1)&&BagManager.Instance.GetItemCount(cubeName[currentIndex])>0&&!hitObject.CompareTag("GrayCube")&&!hitObject.CompareTag("PurpleCube"))
             {
                 BagManager.Instance.RemoveItem(cubeName[currentIndex],1);
                 // 获取碰撞的面法线
@@ -76,13 +78,19 @@ public class Inter_Cube : MonoBehaviour
                 newCube.transform.rotation = Quaternion.LookRotation(hitNormal);
                 Debug.Log("生成新立方体");
             }
-            else if(Input.GetKeyDown(KeyCode.F)&&BagManager.Instance.GetItemCount(cubeName[currentIndex])<=0)
+            //试图在灰色方块上放置时出现提示
+            else if((hitObject.CompareTag("GrayCube")||hitObject.CompareTag("PurpleCube"))&&Input.GetMouseButtonDown(1)&&BagManager.Instance.GetItemCount(cubeName[currentIndex])>0)
+            {
+                grayPromt.text="无法放置";
+                StartCoroutine(grayPromtShow());
+            }
+            else if(Input.GetMouseButtonDown(1)&&BagManager.Instance.GetItemCount(cubeName[currentIndex])<=0)
             {
                 Debug.Log("数量不足");
             }
 
             // 收取立方体
-            if (Input.GetKeyDown(KeyCode.E) && hitObject.GetComponent<CubeParent>().isMove)
+            if (Input.GetMouseButtonDown(0) && hitObject.GetComponent<CubeParent>().isMove)
             {
                 BagManager.Instance.AddItem(hitObject.tag, 1);
                 AudioManager.Instance.Play("Get");
@@ -90,7 +98,12 @@ public class Inter_Cube : MonoBehaviour
             }
         }
     }
-
+    //协程处理Promt
+    IEnumerator grayPromtShow()
+    {
+        yield return new WaitForSeconds(1.0f);
+        grayPromt.text="";
+    }
     void HandleCubeSelection()
     {
         float scrollInput=Input.GetAxis("Mouse ScrollWheel");

@@ -36,6 +36,7 @@ public class PerObjectMaterialProperties : MonoBehaviour
         block.SetFloat(_RimThreshold,rimThreshold);
         GetComponent<Renderer>().SetPropertyBlock(block);//设置接口到我们的渲染里面
     }
+
     //【使用函数】
     void Awake()
     {

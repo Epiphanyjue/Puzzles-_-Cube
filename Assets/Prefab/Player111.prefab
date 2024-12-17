@@ -52,16 +52,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 6
-  moveAccelerationDuration: 3.5
   moveDecelerationDuration: 0.0001
-  maxMoveSpeed: 30
   raycastOffset: 0.2
   minMoveSpeed: 4.5
-  bonusSpeed: 30
   jumpForce: 10
   gravityScaleDuringAscend: 18
   gravityScaleDuringDescend: 22
   jumpWindowDuration: 0.5
+  jumpLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  jumpDetectDistance: 3
   stuckMaxTime: 1.578
   isGrounded: 0
   isJumping: 0
@@ -81,14 +82,17 @@ MonoBehaviour:
   cubeName:
   - WhiteCube
   - GreenCube
+  - PurpleCube
   prefabs:
   - {fileID: 3951221134050741242, guid: 258ef5f6843fe6c45a816d6e259c4092, type: 3}
   - {fileID: 4135261437675769120, guid: 47f11e790803d49429f3941ee2be3fa5, type: 3}
+  - {fileID: 3329694249046151165, guid: de9cd09745da876488c9b66aacbb5764, type: 3}
   outline: {fileID: 0}
   raycastLayer:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 320
   m_distance: 5
+  grayPromt: {fileID: 0}
 --- !u!54 &827277893983237308
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -166,9 +170,9 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.45
-  m_Height: 2.05
+  m_Height: 1.84
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0.01, y: -0.05, z: 0.04}
 --- !u!114 &827277893983237302
 MonoBehaviour:
   m_ObjectHideFlags: 0

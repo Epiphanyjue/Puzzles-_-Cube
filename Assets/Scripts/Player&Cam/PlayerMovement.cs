@@ -7,12 +7,10 @@ public class PlayerMovement : MonoBehaviour
 {
     [Header("移动设置")]
     public float moveSpeed = 5f;                  // 基础移动速度
-    public float moveAccelerationDuration = 0.5f;  // 按键保持后加速时长（秒）
     public float moveDecelerationDuration = 0.5f;  // 按键松开后的减速时长（秒）
-    public float maxMoveSpeed = 10f;              // 最大移动速度
     public float raycastOffset = 0.2f;            // 射线检测偏移量
     public float minMoveSpeed = 5f;               // 最低移动速度
-    public float bonusSpeed = 10f;                // 加速时的bonus速度
+
 
     [Space(30)]
     [Header("跳跃设置")]
@@ -21,10 +19,13 @@ public class PlayerMovement : MonoBehaviour
     public float gravityScaleDuringDescend = 4f;  // 跳跃下落阶段的重力
     public float jumpWindowDuration = 0.2f;       // 跳跃窗口期的时长（秒）
     private float jumpWindowTimer;
+    public LayerMask jumpLayer;
+    [Tooltip("控制跳跃检测的高度")]    [Range(2.0f,10.0f)]
+    public float jumpDetectDistance=3.0f;
     [Header("卡死判断时间")]
     [Range(1.0f,3.0f)]
     public float stuckMaxTime=2.0f;
-    private float jumpStuckTimer=0.0f;
+    private float jumpStuckTimer=0.0f;//卡死状态计时器
 
     private Rigidbody rb;
     public bool isGrounded;
@@ -149,6 +150,7 @@ public class PlayerMovement : MonoBehaviour
 
     void HandleJumping()
     {
+
         if (isGrounded && Mathf.Abs(rb.velocity.y) < 2f)
         {
             isJumping = false;
@@ -188,6 +190,16 @@ public class PlayerMovement : MonoBehaviour
             }
         }
 
+        Collider[] underPlayer=Physics.OverlapBox(transform.position-Vector3.down,new Vector3(0.5f,jumpDetectDistance,0.5f),Quaternion.identity,jumpLayer);
+        foreach(Collider collider in underPlayer)
+        {
+            if(collider.CompareTag("PurpleCube"))
+            {
+                isJumping=false;
+                jumpStuckTimer=0.0f;
+                return;
+            }
+        }
 
         wasGroundedLastFrame = isGrounded;
     }
